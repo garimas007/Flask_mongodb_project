@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup form</title>
+</head>
+
+<body>
+    <p> Hi welcome to small flask project</p>
+    <p> We are sending data from backend to frontend</p>
+    <p> {{ greatings }} </p>
+
+    <h1>Signup Form</h1>
+    <form action="/signup" method="post">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
+<style>
+    body {
+        background-color: yellow;
+    }
+    p {
+        color: red;
+        font-size: 40px;
+        text-align: center;
+    }
+</style>

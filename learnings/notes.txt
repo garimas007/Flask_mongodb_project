@@ -1,0 +1,66 @@
+Flask is a web server framework uses python
+other python web servers framework are -
+    Django
+    web2py
+    bottle
+    cherrypy
+A devops engineer everyday deal with some web server
+
+RestAPI - best way to deal with API
+    API - application programing interface
+    client - server model (request and responce)
+    request - protocol//hostname:port/route
+    visit and check - reqres.in
+    GET - no data going from client
+    POST - with some data
+    POSTMAN
+
+JSON -
+    key value
+
+we learn mini flask program - app.py
+    - routes
+    - run with debug = true
+    - fetching data from request url and JSON (in route code)
+
+serving template
+    - render template in flask
+
+serving dynamic template
+    - render some html page but it needs to be dynamic
+    - for this in html page use double {{ put_dynamic_thing_here }}
+    - this is jinja code
+
+Data from frontend to backend
+    - in frontend page create a form and put action on submit
+    - method will be POST
+    - in backend fetch via request.form.get()
+
+Database
+    - 4 types
+        - relational / sequal db   (have bunch of table) [mysql,postgress]
+        - document / nosql db   (it has documents / JSON file) (database - collection - document)
+        [mongodb,couchdb]
+        - graph db (database>nodes>edges) [Neo4j]
+        - kay-value db (database>key>value) [Redis,Risk]
+
+    - another way to store
+        - blob stores (database>blobs) [aws s3, google cloud storage]
+            it is nested structure of files and folders
+
+Integrate mongodb
+(notes in copy)
+
+Microservices - concept of software architecture design
+    - application in parts which are not dependently working
+    - app will be combination of micro services
+
+how it work in simple application -
+- in frontend microservice just have frontend codes
+- in backend microservice just write the code to connect with database
+- when frontend and backend was together form was giving POST request and browser was able to show
+    but when we write fe and be separately then fe will need GET request
+- app.run(host,port,debug=True)
+- BACKEND_URL = 'http://localhost:9000'
+- import requests
+    
